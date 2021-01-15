@@ -1,0 +1,45 @@
+:root{
+    --first: #f8f1f1;
+    --second :#11698e;
+    --third:#19456b;
+    --fourth: #16c79a
+}
+
+.mynavclr{
+color: var(--first) ;
+}
+.mynavbg{
+    background-color: var(--second);
+}
+.mynavclr:hover{
+    color:var(--fourth)
+}
+.mycontainer{
+
+    background-color: var(--fourth);
+   display: flex;
+   padding-top: 1em;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.card{
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: var(--first);
+}
+.todos{
+    width: 70%;
+}
+.myform{
+    background-color: var(--third);
+    width: 100%;
+    padding: 2em;
+}
+.label{
+    font-weight: 700;
+    color: var(--first);
+}
+.mybtn{
+    background-color: var(--first);
+}

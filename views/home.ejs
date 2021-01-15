@@ -1,13 +1,18 @@
 <%- include("partials/header") %> 
-      <h1>TODO</h1>
+<div class="todos">
     <% for(var i=0;i<itemArray.length;i++){ %> 
-        <li><%= itemArray[i] %></li>
+        <div class="card">
+        <p class="listadded font-weight-bold"><%= itemArray[i] %></p></div>
    <%  } %> 
+ </div>
+ <div class="myform">
 <form action="/" method="POST"> 
   <div class="form-group">
+    <label class="label"for="todo">Enter Things ToDo</label>
 <input class="form-control"id="todo" type="text" name="item">
 </div>
-<button class="btn btn-dark"type="submit">ADD</button>
+<button class="btn mybtn"type="submit">ADD</button>
 </form>
+</div>
  
 <%- include("partials/footer") %> 

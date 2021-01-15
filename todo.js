@@ -5,6 +5,7 @@ const { urlencoded } = require("body-parser");
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + '/public'));
 
 var items = ["apple", "orange"];
 app.get("/", function (req, res) {
