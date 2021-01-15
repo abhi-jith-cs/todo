@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 
 var items = ["apple", "orange"];
 app.get("/", function (req, res) {
-  res.render("todo", { itemArray: items });
+  res.render("home", { itemArray: items });
 });
 app.post("/", function (req, res) {
   var item = req.body.item;
